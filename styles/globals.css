@@ -72,4 +72,20 @@ select:focus{@apply ring-2 ring-gray-900 outline-none;}
   .has-sticky { padding-bottom: 96px; }
   .sticky-cta-shadow { box-shadow: 0 -10px 30px rgba(0,0,0,.08); }
 }
-
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-xl bg-gray-900 text-white px-5 py-2.5 font-medium
+           hover:bg-black/90 active:scale-[.98] disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-xl border border-gray-300 bg-white px-5 py-2.5 font-medium
+           hover:bg-gray-50 active:scale-[.98];
+  }
+  .input {
+    @apply w-full rounded-xl border border-gray-300 bg-white px-3.5 py-2.5 text-gray-900 outline-none
+           focus:ring-2 focus:ring-gray-900/70;
+  }
+  .container-x {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+}

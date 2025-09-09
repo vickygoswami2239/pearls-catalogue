@@ -1,25 +1,20 @@
 import '@/styles/globals.css';
-import { ReactNode } from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Link from 'next/link';
 
-export const metadata = {
-  title: 'Sstringz Pearls — Catalogue',
-  description: 'Fast PWA catalogue for Pearls (B2C + B2B)',
-};
-
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function SiteLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="manifest" href="/manifest.webmanifest" />
-        <meta name="theme-color" content="#ffffff" />
-        <script src="https://checkout.razorpay.com/v1/checkout.js" async></script>
-      </head>
-      <body className="min-h-dvh flex flex-col">
-        <Header />
-        <main className="flex-1 container py-6">{children}</main>
-        <Footer />
+      <body className="bg-gray-50 text-gray-900">
+        <header className="border-b bg-white">
+          <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
+            <Link href="/" className="font-semibold">Sstringz Pearls</Link>
+            <div className="flex items-center gap-4 text-sm">
+              <Link href="/catalogue">Catalogue</Link>
+              <Link href="/b2b">Wholesale</Link>
+            </div>
+          </nav>
+        </header>
+        <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">{children}</main>
       </body>
     </html>
   );

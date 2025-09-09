@@ -16,3 +16,4 @@ data/otps.json
 
 # Misc
 *.log
+*.tsbuildinfo
