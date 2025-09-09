@@ -11,7 +11,19 @@
     "origin": "Japan",
     "shape": "Round",
     "metal": "925 Silver",
-    "price": 8999
+    "price": 8999,
+
+    "sku": "P-001",
+    "sizeMm": 7.5,
+    "luster": "High",
+    "surfaceGrade": "AA+",
+    "nacreMm": 0.6,
+    "treatment": "None",
+    "dimensions": "45 cm length",
+    "weightG": 15.2,
+    "clasp": "Lobster",
+    "stock": 8,
+    "leadTimeDays": 3
   },
   {
     "id": "p2",
@@ -25,7 +37,19 @@
     "origin": "Japan",
     "shape": "Round",
     "metal": "14K Gold",
-    "price": 15999
+    "price": 15999,
+
+    "sku": "P-002",
+    "sizeMm": 8.0,
+    "luster": "Very High",
+    "surfaceGrade": "AAA",
+    "nacreMm": 0.7,
+    "treatment": "None",
+    "dimensions": "45 cm length",
+    "weightG": 17.0,
+    "clasp": "Lobster",
+    "stock": 5,
+    "leadTimeDays": 3
   },
   {
     "id": "p3",
@@ -39,7 +63,19 @@
     "origin": "Japan",
     "shape": "Round",
     "metal": "925 Silver",
-    "price": 9999
+    "price": 9999,
+
+    "sku": "P-003",
+    "sizeMm": 7.0,
+    "luster": "High",
+    "surfaceGrade": "AA+",
+    "nacreMm": 0.6,
+    "treatment": "None",
+    "dimensions": "45 cm length",
+    "weightG": 15.0,
+    "clasp": "Lobster",
+    "stock": 6,
+    "leadTimeDays": 3
   },
   {
     "id": "p4",
@@ -53,7 +89,19 @@
     "origin": "Australia",
     "shape": "Near-round",
     "metal": "14K Gold",
-    "price": 24999
+    "price": 24999,
+
+    "sku": "P-004",
+    "sizeMm": 10.0,
+    "luster": "High",
+    "surfaceGrade": "AAA",
+    "nacreMm": 1.2,
+    "treatment": "None",
+    "dimensions": "Pendant with 45 cm chain",
+    "weightG": 9.0,
+    "clasp": "Spring",
+    "stock": 4,
+    "leadTimeDays": 4
   },
   {
     "id": "p5",
@@ -67,7 +115,19 @@
     "origin": "Indonesia",
     "shape": "Round",
     "metal": "18K Gold",
-    "price": 32999
+    "price": 32999,
+
+    "sku": "P-005",
+    "sizeMm": 12.0,
+    "luster": "Very High",
+    "surfaceGrade": "AAA",
+    "nacreMm": 1.5,
+    "treatment": "None",
+    "dimensions": "Stud earrings",
+    "weightG": 6.0,
+    "clasp": "Push back",
+    "stock": 3,
+    "leadTimeDays": 4
   },
   {
     "id": "p6",
@@ -81,7 +141,19 @@
     "origin": "Philippines",
     "shape": "Baroque",
     "metal": "925 Silver",
-    "price": 21999
+    "price": 21999,
+
+    "sku": "P-006",
+    "sizeMm": 11.0,
+    "luster": "High",
+    "surfaceGrade": "AA+",
+    "nacreMm": 1.2,
+    "treatment": "None",
+    "dimensions": "Pendant with 45 cm chain",
+    "weightG": 10.0,
+    "clasp": "Spring",
+    "stock": 5,
+    "leadTimeDays": 4
   },
   {
     "id": "p7",
@@ -95,7 +167,19 @@
     "origin": "French Polynesia",
     "shape": "Round",
     "metal": "14K Gold",
-    "price": 27999
+    "price": 27999,
+
+    "sku": "P-007",
+    "sizeMm": 9.0,
+    "luster": "High",
+    "surfaceGrade": "AA+",
+    "nacreMm": 0.9,
+    "treatment": "None",
+    "dimensions": "Pendant with 45 cm chain",
+    "weightG": 9.0,
+    "clasp": "Spring",
+    "stock": 5,
+    "leadTimeDays": 4
   },
   {
     "id": "p8",
@@ -109,7 +193,19 @@
     "origin": "French Polynesia",
     "shape": "Round",
     "metal": "18K Gold",
-    "price": 33999
+    "price": 33999,
+
+    "sku": "P-008",
+    "sizeMm": 10.0,
+    "luster": "Very High",
+    "surfaceGrade": "AAA",
+    "nacreMm": 0.9,
+    "treatment": "None",
+    "dimensions": "Pendant with 45 cm chain",
+    "weightG": 10.0,
+    "clasp": "Spring",
+    "stock": 4,
+    "leadTimeDays": 4
   },
   {
     "id": "p9",
@@ -123,7 +219,19 @@
     "origin": "French Polynesia",
     "shape": "Drop",
     "metal": "14K Gold",
-    "price": 29999
+    "price": 29999,
+
+    "sku": "P-009",
+    "sizeMm": 11.0,
+    "luster": "High",
+    "surfaceGrade": "AA+",
+    "nacreMm": 1.0,
+    "treatment": "None",
+    "dimensions": "Pendant with 45 cm chain",
+    "weightG": 11.0,
+    "clasp": "Spring",
+    "stock": 4,
+    "leadTimeDays": 4
   },
   {
     "id": "p10",
@@ -137,7 +245,19 @@
     "origin": "China",
     "shape": "Round",
     "metal": "925 Silver",
-    "price": 3499
+    "price": 3499,
+
+    "sku": "P-010",
+    "sizeMm": 6.0,
+    "luster": "Medium-High",
+    "surfaceGrade": "AA",
+    "nacreMm": 1.0,
+    "treatment": "None",
+    "dimensions": "45 cm length",
+    "weightG": 12.0,
+    "clasp": "Lobster",
+    "stock": 20,
+    "leadTimeDays": 3
   },
   {
     "id": "p11",
@@ -151,7 +271,19 @@
     "origin": "China",
     "shape": "Baroque",
     "metal": "925 Silver",
-    "price": 4499
+    "price": 4499,
+
+    "sku": "P-011",
+    "sizeMm": 8.0,
+    "luster": "High",
+    "surfaceGrade": "AA",
+    "nacreMm": 1.0,
+    "treatment": "None",
+    "dimensions": "45 cm length",
+    "weightG": 13.0,
+    "clasp": "Lobster",
+    "stock": 18,
+    "leadTimeDays": 3
   },
   {
     "id": "p12",
@@ -165,7 +297,19 @@
     "origin": "China",
     "shape": "Round",
     "metal": "925 Silver",
-    "price": 3999
+    "price": 3999,
+
+    "sku": "P-012",
+    "sizeMm": 7.0,
+    "luster": "High",
+    "surfaceGrade": "AA",
+    "nacreMm": 1.0,
+    "treatment": "None",
+    "dimensions": "45 cm length",
+    "weightG": 12.0,
+    "clasp": "Lobster",
+    "stock": 16,
+    "leadTimeDays": 3
   },
   {
     "id": "p13",
@@ -179,7 +323,19 @@
     "origin": "China",
     "shape": "Rice",
     "metal": "925 Silver",
-    "price": 2499
+    "price": 2499,
+
+    "sku": "P-013",
+    "sizeMm": 5.0,
+    "luster": "Medium-High",
+    "surfaceGrade": "A+",
+    "nacreMm": 1.0,
+    "treatment": "None",
+    "dimensions": "45 cm length",
+    "weightG": 10.0,
+    "clasp": "Lobster",
+    "stock": 30,
+    "leadTimeDays": 3
   },
   {
     "id": "p14",
@@ -193,7 +349,19 @@
     "origin": "Indonesia",
     "shape": "Round",
     "metal": "18K Gold",
-    "price": 21999
+    "price": 21999,
+
+    "sku": "P-014",
+    "sizeMm": 13.0,
+    "luster": "High",
+    "surfaceGrade": "AA+",
+    "nacreMm": 0.8,
+    "treatment": "None",
+    "dimensions": "Stud earrings",
+    "weightG": 8.0,
+    "clasp": "Push back",
+    "stock": 6,
+    "leadTimeDays": 4
   },
   {
     "id": "p15",
@@ -207,7 +375,19 @@
     "origin": "Japan",
     "shape": "Baroque",
     "metal": "925 Silver",
-    "price": 6499
+    "price": 6499,
+
+    "sku": "P-015",
+    "sizeMm": 8.0,
+    "luster": "High",
+    "surfaceGrade": "AA+",
+    "nacreMm": 1.0,
+    "treatment": "None",
+    "dimensions": "42 cm length",
+    "weightG": 14.0,
+    "clasp": "Lobster",
+    "stock": 10,
+    "leadTimeDays": 4
   },
   {
     "id": "p16",
@@ -221,7 +401,19 @@
     "origin": "China",
     "shape": "Coin",
     "metal": "925 Silver",
-    "price": 3499
+    "price": 3499,
+
+    "sku": "P-016",
+    "sizeMm": 12.0,
+    "luster": "High",
+    "surfaceGrade": "AA",
+    "nacreMm": 1.0,
+    "treatment": "None",
+    "dimensions": "Pendant with 45 cm chain",
+    "weightG": 8.5,
+    "clasp": "Spring",
+    "stock": 12,
+    "leadTimeDays": 3
   },
   {
     "id": "p17",
@@ -235,7 +427,19 @@
     "origin": "China",
     "shape": "Round",
     "metal": "14K Gold",
-    "price": 12999
+    "price": 12999,
+
+    "sku": "P-017",
+    "sizeMm": 11.0,
+    "luster": "High",
+    "surfaceGrade": "AA+",
+    "nacreMm": 1.0,
+    "treatment": "None",
+    "dimensions": "Pendant with 45 cm chain",
+    "weightG": 9.5,
+    "clasp": "Spring",
+    "stock": 7,
+    "leadTimeDays": 4
   },
   {
     "id": "p18",
@@ -249,7 +453,19 @@
     "origin": "Philippines",
     "shape": "Carved",
     "metal": "925 Silver",
-    "price": 2999
+    "price": 2999,
+
+    "sku": "P-018",
+    "sizeMm": 20.0,
+    "luster": "High",
+    "surfaceGrade": "A+",
+    "nacreMm": 1.0,
+    "treatment": "None",
+    "dimensions": "Pendant with 45 cm chain",
+    "weightG": 7.5,
+    "clasp": "Spring",
+    "stock": 15,
+    "leadTimeDays": 3
   },
   {
     "id": "p19",
@@ -263,6 +479,18 @@
     "origin": "Japan",
     "shape": "Round",
     "metal": "Steel",
-    "price": 4999
+    "price": 4999,
+
+    "sku": "P-019",
+    "sizeMm": 7.0,
+    "luster": "High",
+    "surfaceGrade": "AA+",
+    "nacreMm": 0.6,
+    "treatment": "None",
+    "dimensions": "Stud earrings",
+    "weightG": 4.5,
+    "clasp": "Push back",
+    "stock": 12,
+    "leadTimeDays": 3
   }
 ]

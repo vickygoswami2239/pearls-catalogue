@@ -1,42 +1,46 @@
 import { Product } from '@/lib/types';
-import { AccordionItem } from './Accordion';
 
-export default function SpecsAccordion({ product }: { product: Product }) {
-  const rows = [
-    ['SKU', product.sku ?? '—'],
-    ['Type', product.type],
-    ['Shape', product.shape],
-    ['Size (mm)', String(product.size)],
-    ['Color', product.color],
-    ['Origin', product.origin],
-    ['Metal', product.metal],
-  ];
+type Props = { product: Product };
+
+export default function SpecsAccordion({ product }: Props) {
+  // rows ko yahan define kar rahe hain — jo value milegi wahi show hogi
+  const rows: Array<{ label: string; value?: string | number }> = [
+    { label: 'SKU', value: product.sku },
+    { label: 'Type', value: product.type },
+    { label: 'Shape', value: product.shape },
+    { label: 'Size (mm)', value: product.sizeMm ?? (product as any).size }, // backward compat
+    { label: 'Color', value: product.color },
+    { label: 'Luster', value: product.luster },
+    { label: 'Surface Grade', value: product.surfaceGrade },
+    { label: 'Nacre', value: product.nacreMm ? `${product.nacreMm} mm` : undefined },
+    { label: 'Treatment', value: product.treatment },
+    { label: 'Origin', value: product.origin },
+    { label: 'Dimensions', value: product.dimensions },
+    { label: 'Weight (g)', value: product.weightG },
+    { label: 'Metal', value: product.metal },
+    { label: 'Clasp', value: product.clasp },
+    { label: 'Stock', value: product.stock },
+    { label: 'Lead Time (days)', value: product.leadTimeDays },
+  ].filter((r) => r.value !== undefined && r.value !== null && r.value !== '');
+
+  if (!rows.length) return null;
+
   return (
-    <div className="space-y-3">
-      <AccordionItem title="Specifications" defaultOpen>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-          {rows.map(([k, v]) => (
-            <div key={k} className="flex items-center justify-between border-b py-2">
-              <span className="text-gray-500">{k}</span>
-              <span className="font-medium">{v}</span>
+    <div className="rounded-2xl border">
+      <details open className="group p-4">
+        <summary className="cursor-pointer select-none text-base font-semibold">
+          Specifications
+        </summary>
+
+        <div className="mt-3 grid grid-cols-1 gap-y-2 sm:grid-cols-2">
+          {rows.map((r) => (
+            <div key={r.label} className="flex items-start justify-between gap-4 border-t p-3 sm:border-none">
+              <div className="text-gray-500 text-sm">{r.label}</div>
+              <div className="text-sm font-medium">{r.value}</div>
             </div>
           ))}
         </div>
-      </AccordionItem>
-
-      <AccordionItem title="Care & Warranty">
-        <ul className="list-disc pl-5 text-sm text-gray-700 space-y-1">
-          <li>Soft cloth se clean karein; chemicals se door rakhein.</li>
-          <li>Free re-stringing within 6 months (standard use).</li>
-          <li>1-year manufacturing warranty on clasps & findings.</li>
-        </ul>
-      </AccordionItem>
-
-      <AccordionItem title="Shipping & Returns">
-        <p className="text-sm text-gray-700">
-          Pan-India insured shipping 2–5 days. 7-day easy return (unused, tags intact).
-        </p>
-      </AccordionItem>
+      </details>
     </div>
   );
 }
