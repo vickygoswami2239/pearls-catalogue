@@ -1,0 +1,18 @@
+# Builds & deps
+node_modules/
+.next/
+out/
+dist/
+coverage/
+
+# Editors
+.vscode/
+.DS_Store
+
+# Env & local data (DO NOT COMMIT)
+.env*
+data/users.json
+data/otps.json
+
+# Misc
+*.log

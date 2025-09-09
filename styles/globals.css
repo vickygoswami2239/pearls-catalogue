@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font (quick): production me next/font prefer karein) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root{
+  --brand:#111827;   /* gray-900 */
+  --muted:#6b7280;   /* gray-500 */
+  --ring:#111827;
+}
+
+/* Base */
+html,body{height:100%;}
+body{
+  font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,'Noto Sans','Helvetica Neue',sans-serif;
+  background:#fff; color:#0f172a;
+}
+a{color:inherit;text-decoration:none;}
+::selection{background:#111827;color:#fff;}
+*{outline-color:var(--ring);}
+
+/* Scrollbar (subtle) */
+::-webkit-scrollbar{height:10px;width:10px;}
+::-webkit-scrollbar-thumb{background:#e5e7eb;border-radius:9999px;}
+::-webkit-scrollbar-track{background:transparent;}
+
+/* Make container a bit wider on desktop */
+.container{max-width:1200px;}
+
+/* ---- UI helpers (optional classes you can use) ---- */
+.btn{@apply inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition border border-gray-200 hover:bg-gray-50;}
+.btn-primary{@apply bg-black text-white border-black hover:opacity-90;}
+.card{@apply rounded-2xl border border-gray-200 bg-white shadow-sm;}
+.card-hover{@apply transition hover:shadow-md;}
+
+/* Filters / selects look */
+select{@apply w-full rounded-xl border border-gray-200 bg-white p-2 text-sm;}
+select:focus{@apply ring-2 ring-gray-900 outline-none;}
+
+/* ---- Product image zoom (detail page) ---- */
+.zoom-container{position:relative;}
+.zoom-lens{
+  position:absolute;border:1px solid #cbd5e1;width:120px;height:120px;border-radius:8px;
+  display:none;backdrop-filter:blur(0.5px);
+}
+.zoom-result{
+  position:absolute;right:-300px;top:0;width:280px;height:280px;border:1px solid #e5e7eb;
+  border-radius:12px;background-repeat:no-repeat;background-color:#fff;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);display:none;
+}
+
+/* ---- Hero slider ---- */
+.hero-snap{@apply overflow-x-auto snap-x snap-mandatory flex gap-4 pb-3;}
+.hero-snap>img{@apply snap-start min-w-[85%] md:min-w-[60%] rounded-2xl object-cover;}
+
+/* ---- Line clamp (plugin-free) ---- */
+.line-clamp-1{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;}
+.line-clamp-2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+
+/* ---- Shimmer skeleton (use with <div class="skeleton">) ---- */
+.skeleton{position:relative;overflow:hidden;background:#f3f4f6;}
+.skeleton::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.65) 50%,rgba(255,255,255,0) 100%);
+  transform:translateX(-100%);animation:shimmer 1.6s infinite;
+}
+@keyframes shimmer{100%{transform:translateX(100%);}}
+/* Sticky CTA safety space on mobile */
+@media (max-width: 767px){
+  .has-sticky { padding-bottom: 96px; }
+  .sticky-cta-shadow { box-shadow: 0 -10px 30px rgba(0,0,0,.08); }
+}
+

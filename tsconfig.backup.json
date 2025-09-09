@@ -1,0 +1,16 @@
+{
+"compilerOptions": {
+"target": "ES2022",
+"lib": ["dom", "es2022"],
+"jsx": "preserve",
+"module": "esnext",
+"moduleResolution": "bundler",
+"resolveJsonModule": true,
+"strict": true,
+"baseUrl": ".",
+"paths": {
+"@/components/*": ["components/*"],
+"@/lib/*": ["lib/*"]
+},
+"types": ["node"]
+}
